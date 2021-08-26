@@ -1,20 +1,30 @@
-// array functionality with PHP-like naming
+// array functionality with PHP-like naming and syntax
 
-function array_sum(arr) {
+module.exports = function array_sum(arr) {
+
     return arr.reduce(function (acc, val) {
        return acc + val;
     }, 0);
+
 }
 
-function array_reverse(arr) {
-    return arr.reverse();
-}
+module.exports.array_reverse = arr => arr.reverse();
 
-function array_merge(mainArr, ...arr) {
+module.exports = function array_merge(mainArr, ...arr) {
+
     return mainArr.concat(...arr);
+
 }
 
-// Some sample usage
+module.exports.array_chunk = (arr, chunkSize) => {
 
-// import './index';
-//
+    let chunks = [];
+    let p = 0;
+
+    for(let q = 0; q < arr.length; q = q + chunkSize) {
+        chunks[p] = arr.slice(q, q + chunkSize);
+        p++;
+    }
+
+    return chunks;
+}
