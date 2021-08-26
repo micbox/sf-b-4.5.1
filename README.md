@@ -8,16 +8,14 @@
 
 ## Usage examples
 
-    let php = require('php-array-functions');
-
+    let php = require('php-array-funcs');
+    
     myArray = [1, 2, 3, 4, 5];
-
-    sum = php.array_sum(myArray);
-
-    console.log(sum);
-
+    
+    console.log(php.array_sum(myArray));
+    
     console.log(php.array_reverse(myArray));
-
+    
     console.log(php.array_merge(myArray, [7,8,9], [-4, -7, -99]));
-
+    
     console.log(php.array_chunk(myArray, 2));
