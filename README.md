@@ -1,6 +1,6 @@
 # JS array functions with PHP syntax
 
-## Functions available in this release (1.0.2):
+## Functions available in this release:
 * **array_sum(arr)** - returns the sum of array elements
 * **array_reverse(arr)** - reverses the submitted array's order of elements
 * **array_merge(arr1, arr2, ...)** - merges submitted arrays into one
