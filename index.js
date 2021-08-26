@@ -1,6 +1,14 @@
 // array functionality with PHP-like naming and syntax
 
-module.exports = function array_sum(arr) {
+// module.exports = function array_sum(arr) {
+//
+//     return arr.reduce(function (acc, val) {
+//        return acc + val;
+//     }, 0);
+//
+// }
+
+module.exports.array_sum = (arr) => {
 
     return arr.reduce(function (acc, val) {
        return acc + val;
@@ -8,9 +16,9 @@ module.exports = function array_sum(arr) {
 
 }
 
-module.exports.array_reverse = arr => arr.reverse();
+module.exports.array_reverse = arr => arr.reverse()
 
-module.exports = function array_merge(mainArr, ...arr) {
+module.exports.array_merge = (mainArr, ...arr) => {
 
     return mainArr.concat(...arr);
 
